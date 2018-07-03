@@ -1,0 +1,17 @@
+img {
+    width: 150px;
+}
+
+
+.btn {
+    display: inline;
+    text-transform: uppercase;
+    border: 0;
+    background-color: #212121;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+  }
