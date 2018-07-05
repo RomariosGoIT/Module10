@@ -3,10 +3,12 @@
 const form = document.querySelector('.form')
 const input = document.querySelector('.input')
 const grid = document.querySelector('.grid')
+const spinner = document.querySelector('.spinner-overlay')
 
-const createImg =(data) => {
+const createImg =photos => {
+    
     grid.innerHTML = '';
-    data.hits.forEach(cont =>{
+    photos.hits.forEach(cont =>{
         let content = `<div class ='grid-item'><img src='${cont.largeImageURL}' alt=''></div>`;
         return grid.innerHTML += content;
     })
@@ -23,12 +25,20 @@ const fetchImage = (query, count) => {
 }
 
 
-const submitForm = (event) => {
+const submitForm = event => {    
     event.preventDefault()
-    fetchImage(input.value, 12).then(createImg)
+    spinnerToggle()
+    fetchImage(input.value, 18).then(photos =>{
+        createImg(photos);
+        spinnerToggle();
+    })
+    event.target.reset();
 
 }
 
 form.addEventListener('submit', submitForm)
 
 
+const spinnerToggle = () => {
+    spinner.classList.toggle('visible')
+}
