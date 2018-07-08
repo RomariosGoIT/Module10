@@ -33,53 +33,55 @@
                 </div>
             </div>
         </div>
-        <div class="get_user">
-            <form class="getUser-form">
-                <h2>Get User by ID</h2>
-                <label for="userid">User ID</label>
-                <input type="text" class="user-id" name="userid" placeholder="User ID..">
+        <div class="grid-container">
+            <div class="get_user">
+                <form class="getUser-form">
+                    <h2>Get User by ID</h2>
+                    <label for="userid">User ID</label>
+                    <input type="text" class="user-id" name="userid" placeholder="User ID..">
 
-                <input type="submit" value="GET">
-            </form>
-            <div class="getUser-form">
-                <p class="result"></p>
+                    <input type="submit" value="GET">
+                </form>
+                <div class="getUser-form">
+                    <p class="result"></p>
+                </div>
+
             </div>
+            <div class="sumbit">
+                <form class="sumbit-form">
+                    <h2>Add User</h2>
+                    <label for="fname">User Name</label>
+                    <input type="text" id="Uname" name="firstname" placeholder="User name..">
 
-        </div>
-        <div class="sumbit">
-            <form class="sumbit-form">
-                <h2>Add User</h2>
-                <label for="fname">User Name</label>
-                <input type="text" id="Uname" name="firstname" placeholder="User name..">
+                    <label for="lname">User age</label>
+                    <input type="text" id="Uage" name="lastname" placeholder="User age..">
 
-                <label for="lname">User age</label>
-                <input type="text" id="Uage" name="lastname" placeholder="User age..">
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+            <div class="update-user">
+                <form class="update-form">
+                    <h2>Update User</h2>
+                    <label for="fname">User ID</label>
+                    <input type="text" class="user_id" name="firstname" placeholder="User ID..">
+                    <label for="fname">User Name</label>
+                    <input type="text" class="new_name" name="firstname" placeholder="User name..">
 
-                <input type="submit" value="Add">
-            </form>
-        </div>
-        <div class="update-user">
-            <form class="update-form">
-                <h2>Update User</h2>
-                <label for="fname">User ID</label>
-                <input type="text" class="user_id" name="firstname" placeholder="User ID..">
-                <label for="fname">User Name</label>
-                <input type="text" class="new_name" name="firstname" placeholder="User name..">
+                    <label for="lname">User age</label>
+                    <input type="text" class="new_age" name="lastname" placeholder="User age..">
 
-                <label for="lname">User age</label>
-                <input type="text" class="new_age" name="lastname" placeholder="User age..">
+                    <input type="submit" value="Update">
+                </form>
+            </div>
+            <div class="delete-user">
+                <form class="delete-form">
+                    <h2>Delete User by ID</h2>
+                    <label for="fname">User ID</label>
+                    <input type="text" class="user_id" name="firstname" placeholder="User ID..">
 
-                <input type="submit" value="Update">
-            </form>
-        </div>
-        <div class="delete-user">
-            <form class="delete-form">
-                <h2>Delete User by ID</h2>
-                <label for="fname">User ID</label>
-                <input type="text" class="user_id" name="firstname" placeholder="User ID..">
-
-                <input type="submit" value="Delete">
-            </form>
+                    <input type="submit" value="Delete">
+                </form>
+            </div>
         </div>
     </div>
 

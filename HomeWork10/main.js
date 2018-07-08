@@ -122,12 +122,12 @@ function fetchUserData(data) {
 
 function createUsersTable(text) {
     let content = `
-        <table style="width:100%">
+        <table style="width:670px">
         <tr>
         <th>#</th>
         <th>ID</th>
         <th>NAME</th> 
-        <th>AGE</th>
+        <th style="width:150px">AGE</th>
         </tr>
         ${text}
         </table>`
