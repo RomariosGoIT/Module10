@@ -5,6 +5,7 @@ const searchForm = document.querySelector('.getUser-form')
 const inputUserId = searchForm.querySelector('input')
 const allUsersForm = document.querySelector('.all-users')
 const allUsersTable = allUsersForm.querySelector('table');
+const totallUSersCont = document.querySelector('.total')
 
 const result = document.querySelector('.result')
 const getAllResult = document.querySelector('.getAll-result')
@@ -106,9 +107,13 @@ function fetchUsInterval(data) {
 
 function fetchUserData(data) {
     if (!isActive) return fetchUsInterval(data);
-    let count = 1;
+    let count = 1;    
+    let summ = 0;
+    
     let textCont = ''
     data.data.forEach(user => {
+    summ ++;
+    
         textCont += `
     <tr>
     <td>${count++}</td>
@@ -117,6 +122,7 @@ function fetchUserData(data) {
     <td>${user.age}</td>
     </td>`
     })
+    totallUSersCont.textContent = `Total ${summ} users`;
     return createUsersTable(textCont);
 }
 
