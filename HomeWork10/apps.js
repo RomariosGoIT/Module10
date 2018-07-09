@@ -26,9 +26,6 @@ const newRest = new Rest({
   getAllTotal: getAllUsersTotal,
   getInput: getUserFormInput,
   getResult: getUserFormResult,
-  updateInput: updateUserFormInput,
-  removeInput: removeUserFormInput,
-  addInput: addUserFormInput,
   spinner,
 });
 

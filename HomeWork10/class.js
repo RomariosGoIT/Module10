@@ -7,9 +7,6 @@ class Rest {
       getAllTotal,
       getInput,
       getResult,
-      updateInput,
-      removeInput,
-      addInput,
       spinner,
     }) {
       this.url = url;
@@ -17,9 +14,6 @@ class Rest {
       this.getAllTotal = getAllTotal;
       this.getInput = getInput;
       this.getResult = getResult;
-      this.updateInput = updateInput;
-      this.removeInput = removeInput;
-      this.addInput = addInput;
       this.spinner = spinner;
       this.isActive = false;
       this.count = 1;
@@ -142,9 +136,9 @@ class Rest {
   
     errorCatch(data) {
       if (data.status === 201) {
-        alert(`User ${addUserFormInput[0].value} added seccsesful!`)
+        alert(`User was successfully added!`)
       } else if (data.status === 200) {
-        alert(`User was updated seccsesful!`)
+        alert(`User was successfully updated!`)
       } else if (data.status === 500) {
         alert(data.errors[0])
       } else if (data.status === 404) {
@@ -163,7 +157,7 @@ class Rest {
           throw new Error('Error' + response.statusText)
       }).then(data =>{
           if (data.status === 200) {
-              alert(`User with ID ${id} removed seccesfull`)
+              alert(`User with ID ${id} was successfully removed!`)
           } else if (data.status === 500) {
               alert(`ID [${id}] not found`)
           } else if (data.status === 404) {
