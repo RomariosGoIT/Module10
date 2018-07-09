@@ -15,12 +15,12 @@
         <div class="all-users">
             <h2>Get all users</h2>
             <p class="total"></p>
-            <form class="getAll-form">
+            <div class="getAll-form">
                 <button class="mdc-btn js-get" type="submit">get</button>
-            </form>
+            </div>
             <div class="table_lable">
                 <p class="getAll-result"></p>
-                <table style="width:100%">
+                <table class="getAll-result"style="width:100%">
                     <tr>
                         <th>#</th>
                         <th>ID</th>
@@ -28,14 +28,7 @@
                         <th>AGE</th>
                     </tr>
                 </table>
-            </div>
-
-            <div class="spinner-overlay">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
+            </div>           
         </div>
         <div class="grid-container">
             <div class="get_user">
@@ -47,12 +40,12 @@
                     <input type="submit" value="GET">
                 </form>
                 <div class="getUser-form">
-                    <p class="result"></p>
+                    <p class="getUser-result"></p>
                 </div>
 
             </div>
             <div class="sumbit">
-                <form class="sumbit-form">
+                <form class="addUser-form">
                     <h2>Add User</h2>
                     <label for="fname">User Name</label>
                     <input type="text" id="Uname" name="firstname" placeholder="User name..">
@@ -87,9 +80,15 @@
                 </form>
             </div>
         </div>
-    </div>
-
-    <script src="main.js"></script>
+        <div class="spinner-overlay">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>    
+    <script src="class.js"></script>
+    <script src="apps.js"></script>
 </body>
 
 </html>

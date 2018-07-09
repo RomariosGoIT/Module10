@@ -111,11 +111,11 @@ th, td {
     padding: 5px;
     text-align: center;
 }
-.sumbit-form {
+.addUser-form {
     width: 300px;
 }
 
-.sumbit-form input[type=text], select {
+.addUser-form input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -125,7 +125,7 @@ th, td {
     box-sizing: border-box;
 }
 
-.sumbit-form input[type=submit] {
+.addUser-form input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -136,17 +136,17 @@ th, td {
     cursor: pointer;
 }
 
-.sumbit-form input[type=submit]:hover {
+.addUser-form input[type=submit]:hover {
     background-color: #45a049;
 }
 
-.sumbit-form {
+.addUser-form {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
 
-.sumbit-form h2 {
+.addUser-form h2 {
     text-align: center;
 }
 
@@ -193,7 +193,7 @@ th, td {
 .delete-form input[type=submit]:hover {
     background-color: #45a049;
 }
-.sumbit-form,
+.addUser-form,
 .update-form,
 .getUser-form,
 .delete-form {
